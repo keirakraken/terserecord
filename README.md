@@ -1,4 +1,4 @@
-# dir-hash-80c2c6
+# dir-hash-eb2234
 
 A Rust dir-hash utility.
 

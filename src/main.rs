@@ -1,4 +1,4 @@
-const BENCH: &str = "dir-hash-80c2c6";
+const BENCH: &str = "dir-hash-eb2234";
 fn measure<F: FnOnce() -> R, R>(label: &str, f: F) -> R { let start = std::time::Instant::now(); let result = f(); let elapsed = start.elapsed(); println!("[{}] {}: {:?}", BENCH, label, elapsed); result }
 fn fib(n: u64) -> u64 { if n <= 1 { n } else { fib(n - 1) + fib(n - 2) } }
 fn main() {
